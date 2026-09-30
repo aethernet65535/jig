@@ -1,0 +1,29 @@
+jig
+===
+
+jig is a tool for formatting LKML mbox files.  It can directly generate
+a file that makes it easy to compose a reply.
+
+The generated file looks something like this:
+
+    Subject: [RFC] mm/damon/damo: saving damon sysfs configuration
+
+    On Tue, 29 Sep 2026 03:13:06 +0800 Liew Rui Yan <aethernet65535@gmail.com> wrote:
+
+    > Hi SJ and Community,
+    > 
+    > I've noticed that damo [1] doesn't seem to have a feature for saving
+    > DAMON SYSFS configuration.  I tried 'damo args damon', but it doesn't
+    > save the DAMOS schemes information.  'damo report damon --json' provides
+    > more detailed information, but its output cannot be read by 'damo start
+    > --kdamonds'.
+    > 
+    > I'd like to know if there is currently any way in damo to save the DAMON
+    > SYSFS configuration that can be correctly read by 'damo start
+    > --kdamonds'.  If not, would it be worth adding one?
+    > 
+    > [1] https://github.com/damonitor/damo
+    > 
+    > Best regards,
+    > Rui Yan
+    > 
